@@ -1,20 +1,20 @@
 {
   "app": "MONEY LINE",
-  "version": "1.0.7",
-  "date": "Oct 23, 2026",
+  "version": "1.0.8",
+  "date": "Oct 24, 2026",
   "changelog": [
-    "Bottom bar: tappable balance tiles (read from a local balances.json on your PC; nothing is sent anywhere)",
-    "AUTO-PAYS button next to TODAY: scrollable list of every recurring payment with next date, repeat and pay-from account",
-    "PRIVACY BLUR toggle next to AUTO-PAYS: glows green when on, hover the (i) for what it does",
-    "Bottom bar: due-next and before-payday totals now sit in the center; DESIGN BY VAN moved to the left"
+    "Timeline: bill labels that sit close together now spread out side by side with leader lines, so none overlap",
+    "Bottom bar: balance tiles are shorter (Remember height), sit on the left next to DESIGN BY VAN, and no longer overlap anything; 'updated' time moved to the tooltip/pop-up",
+    "NO UPDATE / YES UPDATE tab moved to the far right of the button row",
+    "Privacy Blur now also blurs the balance tiles and their pop-ups"
   ],
   "exe": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine.exe",
-    "sha256": "f56a026ebc452aebdc176cf20ecaf37817677681e7ebc9943cc8ee0cea2d0816",
-    "bytes": 212480
+    "sha256": "63d3a88005063cba677e8eea07981c12a7a6594b1fe7fde8b9282483b04440b5",
+    "bytes": 214528
   },
   "setup": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine-Setup.exe",
-    "sha256": "2b7f1fb1124928c8527ae18e6c42ae5ee37cc2dcea32216bce4815e1f90dd6fa"
+    "sha256": "b4d7e9ed05188aee92518ac8df499b1bb73fc5bf9f3a7940e50cd7f281c87673"
   }
 }
