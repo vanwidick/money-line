@@ -1,8 +1,9 @@
 {
   "app": "MONEY LINE",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "date": "Oct 24, 2026",
   "changelog": [
+    "Logo: MONEY and LINE no longer cut off at the top; letters and white outline render fully",
     "Bottom bar: removed the small eye privacy icon; the PRIVACY BLUR button is now the only blur control (auto re-blur still works)",
     "Logo: MONEY / LINE now in gunmetal gray Impact with a thin white outline (no green glow); green EKG heartbeat unchanged",
     "Bottom bar: removed the ON-TIME STREAK readout",
@@ -11,11 +12,11 @@
   ],
   "exe": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine.exe",
-    "sha256": "a48ba642a8ac2812175721c50436fe7106f81e8d13100ccc2d15f76f7e5fb87c",
+    "sha256": "b30e3f280bb4640d0dc447b56c4a3a796b21ba92107b10b9c33bf5eae0703e01",
     "bytes": 228352
   },
   "setup": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine-Setup.exe",
-    "sha256": "7b5998c442d2f9d7f583c272cc78d22302c8ad8235b2ff31d3f00d8abb0e9781"
+    "sha256": "471114b8dc3ac69de30d0dcb0cf723e3621650dcc39df908e56c4ebb0285d753"
   }
 }
