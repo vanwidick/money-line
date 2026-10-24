@@ -1,0 +1,20 @@
+{
+  "app": "MONEY LINE",
+  "version": "1.0.7",
+  "date": "Oct 23, 2026",
+  "changelog": [
+    "Bottom bar: tappable balance tiles (read from a local balances.json on your PC; nothing is sent anywhere)",
+    "AUTO-PAYS button next to TODAY: scrollable list of every recurring payment with next date, repeat and pay-from account",
+    "PRIVACY BLUR toggle next to AUTO-PAYS: glows green when on, hover the (i) for what it does",
+    "Bottom bar: due-next and before-payday totals now sit in the center; DESIGN BY VAN moved to the left"
+  ],
+  "exe": {
+    "url": "https://vanwidick.github.io/money-line/download/MoneyLine.exe",
+    "sha256": "f56a026ebc452aebdc176cf20ecaf37817677681e7ebc9943cc8ee0cea2d0816",
+    "bytes": 212480
+  },
+  "setup": {
+    "url": "https://vanwidick.github.io/money-line/download/MoneyLine-Setup.exe",
+    "sha256": "2b7f1fb1124928c8527ae18e6c42ae5ee37cc2dcea32216bce4815e1f90dd6fa"
+  }
+}
