@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#0b0c0d">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>MONEY LINE</title>
+<style>
+:root{--bg:#0b0c0d;--fg:#fff;--dim:#8a8d92;--line:#2a2c2f;--blue:#2f7dff}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:"Segoe UI",Roboto,system-ui,sans-serif;overscroll-behavior:none}
+body{display:flex;flex-direction:column;padding-top:env(safe-area-inset-top)}
+header{display:flex;align-items:center;justify-content:space-between;padding:8px 12px 4px}
+#logo{height:38px;width:168px}
+#upd{font-size:10px;color:var(--dim);text-align:right}
+#stripWrap{position:relative;height:1in;min-height:150px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(#111214,#08090a);touch-action:none}
+#strip{width:100%;height:100%;display:block}
+#tiles{display:flex;gap:8px;overflow-x:auto;padding:10px 12px;scrollbar-width:none}
+#tiles::-webkit-scrollbar{display:none}
+.tile{flex:0 0 auto;border:1px solid #9aa0a6;border-radius:6px;padding:6px 10px;font-size:11px;font-weight:700;background:linear-gradient(#2a2d31,#141517);box-shadow:0 0 6px rgba(255,255,255,.18);white-space:nowrap}
+.tile small{display:block;font-weight:400;font-size:9px;color:var(--dim)}
+#main{flex:1;overflow:auto;padding:0 12px 90px;font-size:12px;color:#c8cbd0}
+#bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:6px;justify-content:space-around;padding:8px 6px calc(8px + env(safe-area-inset-bottom));background:#0e0f10ee;border-top:1px solid #3a3d41}
+#bar button,.btn{flex:1;min-width:0;background:linear-gradient(#34373b,#1a1b1d);color:#fff;border:1px solid #a8adb3;border-radius:6px;padding:10px 2px;font-size:11px;font-weight:700;letter-spacing:.3px}
+#bar button.on{background:#e8eaec;color:#111}
+.blur .pv{filter:blur(7px)}
+#sheet{position:fixed;inset:0;background:#000a;display:none;align-items:flex-end;z-index:5}
+#sheet.show{display:flex}
+#card{width:100%;max-height:78vh;display:flex;flex-direction:column;background:#101112f2;border:1px solid #ddd;border-bottom:0;border-radius:12px 12px 0 0;box-shadow:0 0 14px rgba(255,255,255,.35);padding:14px 12px calc(12px + env(safe-area-inset-bottom))}
+#card h2{margin:0;text-align:center;font-size:18px;letter-spacing:1px}
+#card .sub{text-align:center;color:var(--dim);font-size:10px;margin:2px 0 8px}
+#cbody{overflow:auto;flex:1}
+.row{display:grid;grid-template-columns:64px 56px 70px 1fr;gap:6px;padding:5px 0;border-bottom:1px solid #222;font-size:11.5px}
+.row .amt{text-align:right;color:#fff;font-weight:600}
+.row .d2{grid-column:2/5;color:var(--dim);font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+select{background:#222;color:#fff;border:1px solid #888;border-radius:4px;padding:4px}
+#lock{position:fixed;inset:0;background:var(--bg);display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;z-index:9;text-align:center}
+#lock input{font-size:20px;letter-spacing:2px;text-transform:uppercase;text-align:center;width:100%;max-width:340px;padding:10px;background:#16171a;color:#fff;border:1px solid #888;border-radius:6px}
+#msg{color:#f88;font-size:12px;min-height:16px}
+</style></head>
+<body class="blur">
+<header><canvas id="logo" width="300" height="68"></canvas><div id="upd">--</div></header>
+<div id="stripWrap"><canvas id="strip"></canvas></div>
+<div id="tiles"></div>
+<div id="main"><div id="info" style="color:var(--dim);font-size:11px;line-height:1.5">Swipe the strip left/right. Tap a bill dot for details, a blue CASHFLOW tag for that day's withdrawals.</div></div>
+<div id="bar">
+ <button id="bBlur">BLUR ON</button><button id="bAuto">AUTO-PAYS</button><button id="bCF">CASH FLOW</button><button id="bToday">TODAY</button><button id="bRef">REFRESH</button>
+</div>
+<div id="sheet"><div id="card"><h2 id="ct">-</h2><div class="sub" id="cs"></div><div id="cf"></div><div id="cbody"></div><button class="btn" id="cClose" style="flex:none;margin-top:8px">CLOSE</button></div></div>
+<div id="lock"><canvas id="logo2" width="300" height="68" style="width:220px"></canvas>
+ <div style="font-size:13px;color:#c8cbd0">Enter your MONEY LINE phone key (one time only).<br>It is saved on this phone only.</div>
+ <input id="key" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="XXXX-XXXX-XXXX-XXXX-XXXX">
+ <button class="btn" id="kGo" style="flex:none;padding:12px 30px">UNLOCK</button><div id="msg"></div></div>
+<script src="app.js"></script>
+</body></html>
