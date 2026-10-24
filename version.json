@@ -1,8 +1,9 @@
 {
   "app": "MONEY LINE",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "date": "Oct 24, 2026",
   "changelog": [
+    "Timeline: the TODAY line now stops just above the day-of-week labels instead of covering them",
     "Logo: MONEY and LINE no longer cut off; letters now have a brushed, scratched gunmetal texture with the thin white outline",
     "Bottom bar: removed the small eye privacy icon; the PRIVACY BLUR button is now the only blur control (auto re-blur still works)",
     "Logo: MONEY / LINE now in gunmetal gray Impact with a thin white outline (no green glow); green EKG heartbeat unchanged",
@@ -12,11 +13,11 @@
   ],
   "exe": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine.exe",
-    "sha256": "df85c6ec3fb69df4f123292eff44dc297c76f17895430b64806e299ddd217f8d",
+    "sha256": "5a9d0d77b48635d957641b8c409da35b8c5340ff132a9b2e03edc7c3a4b22a8b",
     "bytes": 230912
   },
   "setup": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine-Setup.exe",
-    "sha256": "269f36d7864a5306c61bb63342ba142406b5eadbb66db8692efa487c1a311ba3"
+    "sha256": "7dcf15411ad43ea80aee728ba94763e6ac92e7231cc25f0d53bff494ef67b49c"
   }
 }
