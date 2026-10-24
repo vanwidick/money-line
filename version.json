@@ -1,8 +1,11 @@
 {
   "app": "MONEY LINE",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "date": "Oct 24, 2026",
   "changelog": [
+    "CASH FLOW tile shows money out over the last 7 days; tap it for a scrollable withdrawal history with an account filter",
+    "Blue CASHFLOW buttons on timeline days with withdrawals open that day's list",
+    "Day labels can use a 5th line when there is room; Privacy Blur covers the new tile and panel",
     "Timeline: bill labels stay below the PAYDAY and month tags at any strip height, compacting the stack on shorter strips",
     "Timeline: bill labels are now a 4-line stack: name, how often it repeats, the account it pays from, then the amount due",
     "Timeline: TODAY now always lands on the current local day; the app opens on today, scrolling snaps to whole days, and the day rolls over at local midnight",
@@ -17,11 +20,11 @@
   ],
   "exe": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine.exe",
-    "sha256": "fd4c72fe3eacfd4eda389f60da989dfda547d927652a242093c6b15ed891dbe4",
-    "bytes": 236032
+    "sha256": "48b2f9f42e4a79fba27c55ab866c4a014e082269746517c6f726aaefbbcc35b4",
+    "bytes": 249344
   },
   "setup": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine-Setup.exe",
-    "sha256": "4e96c836d90b874815ba1f0daae2cd68c2b649be1841f0b5087a3ad0741efb2f"
+    "sha256": "2fae15c79dbcdbac58aabbb5ba8ab8dfc3f92e003cbcaa8ea60357ba2beff59b"
   }
 }
