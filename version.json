@@ -1,8 +1,9 @@
 {
   "app": "MONEY LINE",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "date": "Oct 24, 2026",
   "changelog": [
+    "Timeline: each bill label is now a 3-line stack: name, short info line, then amount due",
     "Timeline: the TODAY line now stops just above the day-of-week labels instead of covering them",
     "Logo: MONEY and LINE no longer cut off; letters now have a brushed, scratched gunmetal texture with the thin white outline",
     "Bottom bar: removed the small eye privacy icon; the PRIVACY BLUR button is now the only blur control (auto re-blur still works)",
@@ -13,11 +14,11 @@
   ],
   "exe": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine.exe",
-    "sha256": "5a9d0d77b48635d957641b8c409da35b8c5340ff132a9b2e03edc7c3a4b22a8b",
-    "bytes": 230912
+    "sha256": "d603a8c351a4836836b2fabd2d3706a14b22a1a60d9fb05281f0f4d4ba120e0e",
+    "bytes": 231936
   },
   "setup": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine-Setup.exe",
-    "sha256": "7dcf15411ad43ea80aee728ba94763e6ac92e7231cc25f0d53bff494ef67b49c"
+    "sha256": "18c2f88b0fb10fa0d418c859b2feac37dd3cbc288f4080e620650732fa7551ab"
   }
 }
