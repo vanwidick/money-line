@@ -1,9 +1,10 @@
 {
   "app": "MONEY LINE",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "date": "Oct 24, 2026",
   "changelog": [
-    "Logo: the line between MONEY and LINE is now green with a looping EKG heartbeat trace",
+    "Logo: bigger MONEY / LINE with a soft green glow, and a green divider line with a looping EKG heartbeat",
+    "Timeline fills the full strip height; BILLS TIMELINE and the due-soon note moved to the far left",
     "Timeline: bill labels that sit close together now spread out side by side with leader lines, so none overlap",
     "Bottom bar: balance tiles are shorter (Remember height), sit on the left next to DESIGN BY VAN, and no longer overlap anything; 'updated' time moved to the tooltip/pop-up",
     "NO UPDATE / YES UPDATE tab moved to the far right of the button row",
@@ -11,11 +12,11 @@
   ],
   "exe": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine.exe",
-    "sha256": "f21a64ff556bfc806906fbdd285018bde5c8a71d544f99c199cfa00f5cb60e50",
+    "sha256": "757fd78a004dc0443ecaa73f34a1e3487c8ac4a150e8eca707c6a90e5904ccb2",
     "bytes": 218112
   },
   "setup": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine-Setup.exe",
-    "sha256": "5045898507621ea1dab839f301069fd628c0e0ddc6ff64362c39339d66c0799c"
+    "sha256": "8ad8a113261497f9516cc2ccd92dde57db8f2064bcdc8f1f00b3161a3f66b986"
   }
 }
