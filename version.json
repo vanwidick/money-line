@@ -1,8 +1,9 @@
 {
   "app": "MONEY LINE",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "date": "Oct 24, 2026",
   "changelog": [
+    "Timeline: bill labels are now a 4-line stack: name, how often it repeats, the account it pays from, then the amount due",
     "Timeline: TODAY now always lands on the current local day; the app opens on today, scrolling snaps to whole days, and the day rolls over at local midnight",
     "Timeline: each bill label is now a 3-line stack: name, short info line, then amount due",
     "Timeline: the TODAY line now stops just above the day-of-week labels instead of covering them",
@@ -15,11 +16,11 @@
   ],
   "exe": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine.exe",
-    "sha256": "55fe71daae91b98c4a9f3642a816f645575d493c52a8d14b0e1d8bc75e9b1892",
-    "bytes": 232448
+    "sha256": "7930bc068c862c4ea113b93fc9fec183e939dcf4adedd757ac70fe7b823871f5",
+    "bytes": 235520
   },
   "setup": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine-Setup.exe",
-    "sha256": "949a6109f0cec8d93388d2abc882868fdc009cb0a335b6b18b68555243ef9349"
+    "sha256": "45b9f85f26a1e6bfadfa3758cd6816f4613068d15d226795aedd6af57b231098"
   }
 }
