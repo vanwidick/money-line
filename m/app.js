@@ -153,5 +153,7 @@ $('bAuto').onclick=()=>{if(!D)return;const t=iso(today()),e=iso(new Date(today()
   sheet('AUTO-PAYS','next 45 days',r.map(o=>'<div class="row"><div>'+pdate(o.d).toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'})+'</div><div class="pv" style="grid-column:2/3">'+esc(o.a)+'</div><div class="amt pv">'+(o.tbd?'TBD':money(o.amt))+'</div><div class="pv">'+esc(o.n)+'</div></div>').join('')||'<div style="color:#888;padding:10px">None.</div>')};
 $('bCF').onclick=()=>D&&cfPanel(null);
 $('bRef').onclick=()=>refresh(true);
+// one-tap setup link: #k=<key> saves the key on this phone, then the fragment is wiped from the address bar
+(()=>{const m=location.hash.match(/[#&]k=([^&]+)/);if(m){try{localStorage.setItem(LS,norm(decodeURIComponent(m[1])))}catch(e){}history.replaceState(null,'',location.pathname+location.search)}})();
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
 size();setBlur(true);refresh(false);setInterval(()=>refresh(false),15*60000);
