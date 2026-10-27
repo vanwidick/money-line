@@ -56,8 +56,9 @@ function build(){
   $('upd').textContent='updated '+fmtTime(D.generated);
   const t=$('tiles');t.innerHTML='';
   const tile=(lbl,val,sub,fn)=>{const b=document.createElement('div');b.className='tile';b.innerHTML=lbl+' <span class="pv">'+val+'</span><small>'+sub+'</small>';b.onclick=fn;t.appendChild(b)};
-  tile('CASH FLOW',money(cf7()),'out, last 7 days',()=>cfPanel(null));
-  (D.accounts||[]).forEach(a=>tile(String(a.name).toUpperCase(),a.balance==null?'--':money(a.balance),(a.kind==='credit'?'owed':'balance')+' · '+fmtTime(a.asOf||D.balUpdated),()=>acctPanel(a)));
+  tile('CASH FLOW',money(cf7()),'out · 7 days',()=>cfPanel(null));
+  const accs=(D.accounts||[]).slice();if(!accs.some(a=>a.key==='venmo')){const i=accs.findIndex(a=>a.key==='schwab');accs.splice(i<0?accs.length:i+1,0,{key:'venmo',name:'Venmo',balance:null})}
+  accs.forEach(a=>tile(String(a.name).toUpperCase(),a.balance==null?'--':money(a.balance),(a.kind==='credit'?'owed ':'')+(a.balance==null?'not linked':fmtTime(a.asOf||D.balUpdated)),()=>acctPanel(a)));
   draw();
 }
 // ---------- strip ----------

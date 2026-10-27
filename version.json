@@ -1,8 +1,10 @@
 {
   "app": "MONEY LINE",
-  "version": "1.2.0",
-  "date": "Oct 24, 2026",
+  "version": "1.2.1",
+  "date": "Oct 26, 2026",
   "changelog": [
+    "New VENMO balance tile next to the bank tiles (shows a dash until a Venmo balance is in balances.json)",
+    "Balance, PAYPAL and CASHFLOW tiles are about 30% narrower",
     "CASH FLOW tile shows money out over the last 7 days; tap it for a scrollable withdrawal history with an account filter",
     "Blue CASHFLOW buttons on timeline days with withdrawals open that day's list",
     "Day labels can use a 5th line when there is room; Privacy Blur covers the new tile and panel",
@@ -20,11 +22,11 @@
   ],
   "exe": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine.exe",
-    "sha256": "48b2f9f42e4a79fba27c55ab866c4a014e082269746517c6f726aaefbbcc35b4",
-    "bytes": 249344
+    "sha256": "185cd3af5267fe5a760a7b62321bab3d8c005be91e718917d82c5a02bec2d824",
+    "bytes": 250368
   },
   "setup": {
     "url": "https://vanwidick.github.io/money-line/download/MoneyLine-Setup.exe",
-    "sha256": "2fae15c79dbcdbac58aabbb5ba8ab8dfc3f92e003cbcaa8ea60357ba2beff59b"
+    "sha256": "c80a4f0a44dfbed36958f4100ec069a2b4fdc97e2e9d3649df848765abb11203"
   }
 }
